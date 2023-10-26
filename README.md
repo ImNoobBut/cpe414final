@@ -1,33 +1,42 @@
 # Uniform Detection with ResNet-50
-This GitHub project is focused on utilizing deep learning and computer vision techniques to solve the problem of uniform detection. In scenarios where it's crucial to distinguish between individuals wearing uniforms and those who are not, this project presents a robust solution.
 
-# How to Install it
-git clone https://github.com/ImNoobBut/cpe414final.git
+![Uniform Detection](uniform_detection.png)
 
-./envr/Script/activate
+Welcome to the Uniform Detection with ResNet-50 project! This project focuses on using deep learning and computer vision techniques to solve the problem of uniform detection. Whether you need to distinguish individuals wearing uniforms from those who are not, this repository provides a robust solution.
 
-# Project Overview
-The project employs the following key components:
+## Project Overview
 
-Data Augmentation: The dataset is enriched through data augmentation techniques, which include rotation, shifting, shearing, zooming, and horizontal flipping. This helps in enhancing the model's ability to generalize from limited data.
+This project consists of several key components:
 
-Data Preprocessing: The dataset is loaded, preprocessed, and split into training and validation sets. Images are resized to a specified input size to ensure uniformity.
+- **Data Augmentation**: The dataset is enriched through data augmentation techniques, enhancing the model's ability to generalize from limited data.
 
-ResNet-50 Model: A pre-trained ResNet-50 model is used as the foundation for the deep learning model. This model is widely recognized for its ability to extract meaningful features from images.
+- **Data Preprocessing**: The dataset is loaded, preprocessed, and split into training and validation sets. Images are resized to a specified input size for uniformity.
 
-Custom Classification Head: A custom classification head is added on top of the ResNet-50 model to make it suitable for the specific task of uniform detection. It includes layers for global average pooling and fully connected layers with ReLU activation.
+- **ResNet-50 Model**: A pre-trained ResNet-50 model is used as the foundation for the deep learning model, known for its feature extraction capabilities.
 
-Transfer Learning: The pre-trained layers of ResNet-50 are frozen to leverage the knowledge it gained from a large dataset. Only the custom classification layers are trained from scratch.
+- **Custom Classification Head**: A custom classification head is added to make the model suitable for uniform detection. It includes global average pooling and fully connected layers with ReLU activation.
 
-Model Training: The model is trained using the prepared dataset, and essential callbacks, such as early stopping and model checkpointing, are incorporated to improve training efficiency and save the best-performing model.
+- **Transfer Learning**: The pre-trained layers of ResNet-50 are frozen to leverage knowledge gained from a large dataset. Only the custom classification layers are trained from scratch.
 
-Model Evaluation: The model's performance is evaluated on the validation set, with metrics such as accuracy and loss being monitored.
+- **Model Training**: The model is trained using the prepared dataset, with essential callbacks for efficient training and model checkpointing.
 
-Model Saving: The final trained model is saved for future use, and the best-performing model during training is also preserved.
+- **Model Evaluation**: Model performance is evaluated on the validation set, monitoring metrics such as accuracy and loss.
 
-# Usage
+- **Model Saving**: The final trained model is saved for future use, and the best-performing model during training is also preserved.
+
+## Usage
+
 This project provides a powerful tool for detecting uniforms in images. You can use the trained model to make predictions on new data or fine-tune it for your specific use case.
 
 Feel free to explore the code and adapt it to your needs. If you find this project useful or have any questions, please don't hesitate to reach out. Your feedback and contributions are highly appreciated.
 
-Note: The project directory structure and file paths may need to be adjusted according to your specific setup.
+**Note:** The project directory structure and file paths may need to be adjusted according to your specific setup.
+
+For more details and to get started, please refer to the code and documentation within this repository. Enjoy exploring and utilizing the Uniform Detection with ResNet-50 project!
+
+## Requirements
+
+To set up the necessary Python dependencies for this project, use the following command:
+
+```bash
+pip install -r requirements.txt
