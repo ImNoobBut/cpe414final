@@ -2,9 +2,11 @@
 This GitHub project is focused on utilizing deep learning and computer vision techniques to solve the problem of uniform detection. In scenarios where it's crucial to distinguish between individuals wearing uniforms and those who are not, this project presents a robust solution.
 
 # How to Install it
-git clone 
+git clone https://github.com/ImNoobBut/cpe414final.git
 
-Project Overview
+./envr/Script/activate
+
+# Project Overview
 The project employs the following key components:
 
 Data Augmentation: The dataset is enriched through data augmentation techniques, which include rotation, shifting, shearing, zooming, and horizontal flipping. This helps in enhancing the model's ability to generalize from limited data.
@@ -23,7 +25,7 @@ Model Evaluation: The model's performance is evaluated on the validation set, wi
 
 Model Saving: The final trained model is saved for future use, and the best-performing model during training is also preserved.
 
-Usage
+# Usage
 This project provides a powerful tool for detecting uniforms in images. You can use the trained model to make predictions on new data or fine-tune it for your specific use case.
 
 Feel free to explore the code and adapt it to your needs. If you find this project useful or have any questions, please don't hesitate to reach out. Your feedback and contributions are highly appreciated.
